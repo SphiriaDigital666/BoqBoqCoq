@@ -63,10 +63,10 @@ const imageColors = [
     secondaryl: "#663d05",
   },
   {
-    backgroundColor: "#c89f6e",
-    titleMain: "white",
-    secondary: "blue",
-    secondaryl: "red",
+    backgroundColor: "#DEA35E",
+    titleMain: "#47321E",
+    secondary: "#47321E",
+    secondaryl: "#663D05",
   },
 ];
 
