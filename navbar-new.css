@@ -1,0 +1,52 @@
+.home {
+  background-color: #fddf7c;
+}
+
+/* .home:hover {
+  background-color: blue;
+  transition: background-color 0.1s ease;
+} */
+
+.mint {
+  background-color: #eb5a5d;
+}
+
+/* .mint:hover {
+  background-color: black;
+  transition: background-color 0.1s ease;
+} */
+
+.buy {
+  background-color: #f3a4cd;
+}
+
+/* .buy:hover {
+  background-color: green;
+  transition: background-color 0.1s ease;
+} */
+
+.about {
+  background-color: #b9f9c6;
+}
+
+/* .about:hover {
+  background-color: thistle;
+  transition: background-color 0.1s ease;
+} */
+
+.nav-bar {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-bar li {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.helloo {
+  background-color: white; /* Set the default background color for the "helloo" section */
+  transition: background-color 0.7s ease;
+}
