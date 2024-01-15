@@ -29,6 +29,12 @@
       });
     });
 
+    agSlideFlickity.on("click.flickity", function () {
+      // Toggle autoplay on click
+      agSlideFlickity.flickity("pausePlayer");
+      agSlideFlickity.flickity("playPlayer");
+    });
+
     agSlideFlickity.on("dragStart.flickity", function (t, e) {
       // Pause auto-play when dragging starts
       agSlideFlickity.flickity("stopPlayer");
@@ -36,6 +42,16 @@
 
     agSlideFlickity.on("dragEnd.flickity", function (t, e) {
       // Resume auto-play when dragging ends
+      agSlideFlickity.flickity("playPlayer");
+    });
+
+    agSlideFlickity.on("mouseenter", function () {
+      // Play auto-play on hover
+      agSlideFlickity.flickity("playPlayer");
+    });
+
+    agSlideFlickity.on("mouseleave", function () {
+      // Pause auto-play on mouse leave
       agSlideFlickity.flickity("playPlayer");
     });
   });
