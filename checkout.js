@@ -25,7 +25,7 @@
         var n = agCard[e],
           i = (-1 * (t.target + agSlide.x)) / 3;
 
-        n.style[agTransform] = "translateX(" + i + "px)";
+        // n.style[agTransform] = "translateX(" + i + "px)";
       });
     });
 
