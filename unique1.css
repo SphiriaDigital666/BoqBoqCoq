@@ -87,3 +87,15 @@
   /* transform: translate3d(0%, -30%, 570px); */
   transform: translate3d(-10%, -30%, 500px);
 }
+
+/* -----------z index-------------- */
+
+.card1c {
+  position: relative;
+  z-index: 2;
+}
+
+.heightcard {
+  position: absolute;
+  z-index: 1;
+}
