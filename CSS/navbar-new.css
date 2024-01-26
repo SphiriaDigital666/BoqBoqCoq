@@ -52,12 +52,12 @@ li a {
   opacity: 0.9;
 }
 
-.navigation {
+/* .navigation {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50px;
   left: 50%;
-}
+} */
 
 .active3:hover {
   color: #fff;
