@@ -65,8 +65,6 @@
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_monobg.jpg")
       center / cover no-repeat;
   }
-  .card__text {
-  }
 }
 
 .card__two {
@@ -76,8 +74,6 @@
   .card__bg {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_spirited.jpg")
       center / cover no-repeat;
-  }
-  .card__text {
   }
 }
 
@@ -90,8 +86,6 @@
   .card__bg {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_howlbg.jpg")
       center / cover no-repeat;
-  }
-  .card__text {
   }
 }
 
