@@ -1,56 +1,37 @@
-document.addEventListener("DOMContentLoaded", () => {
-  let text = document.getElementById("text");
-  let hero2 = document.getElementById("hero2");
-  let hero3 = document.getElementById("hero3");
-  let hero4 = document.getElementById("hero4");
-  let hero5 = document.getElementById("hero5");
-  let hero8 = document.getElementById("hero8");
-  let hero9 = document.getElementById("hero9");
-  let hero13 = document.getElementById("hero13");
-  let hero15 = document.getElementById("hero15");
-  let hero14 = document.getElementById("hero14");
+// GitHub Repo : https://github.com/aryan-tayal/Mountains-Parallax
+// Live Site : https://aryan-tayal.github.io/Mountains-Parallax/
 
-  window.addEventListener("scroll", () => {
-    let value = window.scrollY;
+const mountainLeft = document.querySelector("#mountain_left");
+const mountainRight = document.querySelector("#mountain_right");
+const cloud1 = document.querySelector("#clouds_1");
+const cloud2 = document.querySelector("#clouds_2");
+const text = document.querySelector("#text");
+const man = document.querySelector("#man");
 
-    hero8.style.left = value * -2.5 + "px";
-    hero8.style.top = value * 0.5 + "px";
-    hero9.style.left = value * 0.5 + "px";
-    hero2.style.left = value * -0.5 + "px";
-    hero13.style.left = value * -2.5 + "px";
-    hero13.style.top = value * 2.5 + "px";
-
-    hero14.style.marginTop = value * 3 + "px";
-    hero9.style.left = value * 0.5 + "px";
-    hero2.style.left = value * -0.5 + "px";
-    hero4.style.left = value * -1.5 + "px";
-    hero5.style.top = value * -1.5 + "px";
-    hero3.style.left = value * 1.5 + "px";
-    hero15.style.left = value * 1.5 + "px";
-  });
+window.addEventListener("scroll", () => {
+  let value = scrollY;
+  mountainLeft.style.left = `-${value / 0.7}px`;
+  cloud2.style.left = `-${value * 2}px`;
+  mountainRight.style.left = `${value / 0.7}px`;
+  cloud1.style.left = `${value * 2}px`;
+  text.style.bottom = `-${value}px`;
+  man.style.height = `${window.innerHeight - value}px`;
 });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   let hero2 = document.getElementById("hero2");
-//   let hero4 = document.getElementById("hero4");
-//   let hero5 = document.getElementById("hero5");
-//   let hero8 = document.getElementById("hero8");
-//   let hero9 = document.getElementById("hero9");
-//   let hero15 = document.getElementById("hero15");
-//   let hero14 = document.getElementById("hero14");
+//////////////////////////////////////////////
+document.addEventListener("DOMContentLoaded", function () {
+  var navBar = document.querySelector(".navbarr");
+  var topOfNav = navBar.offsetTop;
 
-//   window.addEventListener("scroll", () => {
-//     let value = window.scrollY;
+  function fixNav() {
+    if (window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = navBar.offsetHeight + "px";
+      navBar.classList.add("nav-when-fixed");
+    } else {
+      document.body.style.paddingTop = 0;
+      navBar.classList.remove("nav-when-fixed");
+    }
+  }
 
-//     hero8.style.left = value * -2.5 + "px";
-//     hero8.style.top = value * 0.5 + "px";
-//     hero9.style.left = value * 0.5 + "px";
-//     hero2.style.left = value * -0.5 + "px";
-//     hero14.style.marginTop = value * 3 + "px";
-//     hero9.style.left = value * 0.5 + "px";
-//     hero2.style.left = value * -0.5 + "px";
-//     hero4.style.left = value * -1.5 + "px";
-//     hero5.style.top = value * -1.5 + "px";
-//     hero15.style.left = value * 1.5 + "px";
-//   });
-// });
+  window.addEventListener("scroll", fixNav);
+});
