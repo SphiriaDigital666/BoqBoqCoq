@@ -1,4 +1,4 @@
-.parallax {
+/* .parallax {
   position: relative;
 
   height: 100vh;
@@ -77,6 +77,123 @@
 @media screen and (min-width: 1201px) and (max-width: 1700px) {
   .parallax {
     height: 80vh;
+    margin-bottom: 0;
+  }
+
+  .parallax img {
+    height: 100%;
+  }
+
+  .sec {
+    margin-top: -5px;
+  }
+} */
+
+/* newwwwwwwwwwwwwwwww */
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text {
+  position: absolute;
+  font-size: 5em;
+  color: rgb(255, 255, 255);
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sec {
+  position: relative;
+  background: #6d1f1f;
+  padding: 100px;
+}
+
+.sec h2 {
+  font-size: 3em;
+  color: aliceblue;
+  margin-bottom: 1px;
+  margin-left: 400px;
+}
+
+.sec p {
+  font-size: 1em;
+  color: aliceblue;
+  font-weight: 300;
+}
+
+.navbarr {
+  background-color: #fff;
+  color: #fff;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* @media screen and (max-width: 600px) {
+  .parallax {
+    height: 70vh;
+  }
+
+  .parallax img {
+    height: 100%;
+  }
+
+  .sec {
+    margin-top: -2px;
+  }
+
+  .sec h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+} */
+
+@media screen and (min-width: 1280px) and (max-width: 1419px) {
+  .parallax {
+    height: 100vh;
+    margin-bottom: 0px;
+  }
+
+  .parallax img {
+    height: 85%;
+  }
+
+  .sec {
+    margin-top: -5px;
+  }
+}
+
+@media screen and (min-width: 1420px) and (max-width: 1600px) {
+  .parallax {
+    height: 100vh;
+
+    margin-bottom: 0;
+  }
+
+  .parallax img {
+    height: 90%;
+  }
+
+  .sec {
+    margin-top: -5px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .parallax {
+    height: 100vh;
     margin-bottom: 0;
   }
 
