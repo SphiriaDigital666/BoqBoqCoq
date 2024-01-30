@@ -24,7 +24,7 @@ body {
   top: inherit;
   bottom: 0;
 }
-#top img {
+.parallax-body .cee {
   position: absolute;
   top: 0;
   left: 0;
